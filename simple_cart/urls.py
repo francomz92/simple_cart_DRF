@@ -27,6 +27,7 @@ drf_urls = [
     path('api/', include('apps.users.urls')),
     path('api/', include('apps.products.urls')),
     path('api/', include('apps.cart.urls')),
+    path('api/', include('apps.orders.urls')),
 ]
 
 urlpatterns = swagger_urls + drf_urls + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
